@@ -65,7 +65,7 @@ const deleteUrl = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const shortUrl = yield shortUrl_1.urlModel.findByIdAndDelete({ _id: req.params.id });
         if (shortUrl) {
-            res.status(204).send({ message: "Requested Url deleted Successfully" });
+            res.status(200).send({ message: "Requested Url deleted Successfully" });
         }
     }
     catch (error) {
