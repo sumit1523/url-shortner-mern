@@ -1,7 +1,7 @@
 {
   "scripts": {
     "dev": "concurrently \"npm run start --prefix server-app\" \"npm run dev --prefix client-app\"",
-    "build": "npm run build --prefix client-app && npm run build --prefix server-app",
+    "build": "npm run build --prefix client-app && npm run start --prefix server-app",
     "start": "npm run start --prefix server"
   },
   "devDependencies": {
